@@ -1,0 +1,26 @@
+{
+    "workbench.colorTheme": "Rainbow Light (rainglow)",
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.renderControlCharacters": true,
+    "workbench.iconTheme": "ayu",
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Iosevka,'Migu 1M'",
+    "highlight-matching-tag.enabled": true,
+    "highlight-matching-tag.styles": {
+      "opening": {
+        "name": {
+          "custom": {
+              "borderWidth": "0 0 2px 0px",
+              "borderStyle": "solid",
+              "borderColor": "gold"                
+          },
+          "highlight":  "lightyellow",
+        }
+      }
+    },
+    "grep2file.outputContentFormat": "csv",
+    "emmet.triggerExpansionOnTab": true,
+    "editor.detectIndentation": false,
+}
