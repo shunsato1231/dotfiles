@@ -1,44 +1,33 @@
 #!/bin/bash -l
-if [ ! -e ~/.zsh ]; then
-  mkdir ~/.zsh
-fi
-
+mkdir -p ~/.zsh
 cd ~/.zsh
+
 if [ ! -e ~/.zsh/git-prompt.sh ]; then
-  touch ~/git-prompt.sh
+curl -o git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
 
-if [ ! -e ~~/.zsh/git-completion.bash ]; then
-  touch ~/git-completion.bash
+if [ ! -e ~/.zsh/git-completion.bash ]; then
+curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 fi
 
-if [ ! -e ~~/.zsh/_git ]; then
-  touch ~/_git
+if [ ! -e ~/.zsh/_git ]; then
+curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 fi
-
-ln -is ~/dotfiles/git-prompt.sh .
-ln -is ~/dotfiles/git-completion.bash .
-ln -is ~/dotfiles/_git .
 
 cd ~/
-
-if [ ! -e ~/.bashrc ]; then
-  touch ~/.bashrc
-fi
-
-if [ ! -e ~/.bash_profile ]; then
-  touch ~/.bash_profile
-fi
 
 if [ ! -e ~/.zshrc ]; then
   touch ~/.zshrc
 fi
 
-ln -is ~/dotfiles/.bashrc .
-ln -is ~/dotfiles/.bash_profile .
+if [ ! -e ~/.zprofile ]; then
+  touch ~/.zprofile
+fi
+
 ln -is ~/dotfiles/.zshrc .
+ln -is ~/dotfiles/.zprofile .
 
 # vscode
-# sh ~/dotfiles/vscsode/setup.sh
+sh ~/dotfiles/vscsode/setup.sh
 
 echo "-----Finish!!------"

@@ -1,4 +1,5 @@
 # dotfiles
+<zsh移行>
 
 導入
 - ``` cd ~```
@@ -8,11 +9,9 @@
 
 全てyesと入力し回答
 ```
-replace ./git-prompt.sh? yes
-replace ./git-completion.bash? yes
-replace ./.bash_profile? yes
+replace ./.zshrc? yes
+replace ./.zprofile? yes
 ```
 
 変更適応
-- ``` source ~/.bash_profile ```
 - ``` source ~/.zshrc ```
