@@ -23,4 +23,5 @@
     "grep2file.outputContentFormat": "csv",
     "emmet.triggerExpansionOnTab": true,
     "editor.detectIndentation": false,
+    "gitlens.gitCommands.closeOnFocusOut": true,
 }
