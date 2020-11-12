@@ -13,5 +13,6 @@ replace ./git-completion.bash? yes
 replace ./.bash_profile? yes
 ```
 
-bash_profile適応
+変更適応
 - ``` source ~/.bash_profile ```
+- ``` source ~/.zshrc ```
