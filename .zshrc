@@ -19,3 +19,7 @@ setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{blue}%~%f %F{red}$(__git_ps1 "(%
 #export PATH=$HOME/.nodebrew/current/bin:$PATHexport PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+#Homebrew Path(M1-mac)
+export PATH=/opt/homebrew/bin:$PATH
+
