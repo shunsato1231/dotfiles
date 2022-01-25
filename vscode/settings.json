@@ -1,27 +1,53 @@
 {
-    "workbench.colorTheme": "Rainbow Light (rainglow)",
-    "editor.fontSize": 16,
-    "editor.renderWhitespace": "all",
-    "editor.tabSize": 2,
-    "editor.renderControlCharacters": true,
-    "workbench.iconTheme": "ayu",
-    "window.zoomLevel": 0,
-    "editor.fontFamily": "Iosevka,'Migu 1M'",
-    "highlight-matching-tag.enabled": true,
-    "highlight-matching-tag.styles": {
-      "opening": {
-        "name": {
-          "custom": {
-              "borderWidth": "0 0 2px 0px",
-              "borderStyle": "solid",
-              "borderColor": "gold"                
-          },
-          "highlight":  "lightyellow",
-        }
+  "workbench.colorTheme": "Rainbow Light (rainglow)",
+  "editor.fontSize": 16,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.renderControlCharacters": true,
+  "workbench.iconTheme": "ayu",
+  "editor.fontFamily": "Iosevka,'Migu 1M'",
+  "highlight-matching-tag.enabled": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "custom": {
+          "borderWidth": "0 0 2px 0px",
+          "borderStyle": "solid",
+          "borderColor": "gold"
+        },
+        "highlight": "lightyellow"
       }
-    },
-    "grep2file.outputContentFormat": "csv",
-    "emmet.triggerExpansionOnTab": true,
-    "editor.detectIndentation": false,
-    "gitlens.gitCommands.closeOnFocusOut": true,
+    }
+  },
+  "grep2file.outputContentFormat": "csv",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.detectIndentation": false,
+  "gitlens.gitCommands.closeOnFocusOut": true,
+  "code-eol.color": "#E6E6E6",
+  "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home",
+      "default": true
+    }
+  ],
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.java$",
+        "cmd": "google-java-format --replace ${file}"
+      }
+    ]
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/shun.sato/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.project.importHint": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  }
 }

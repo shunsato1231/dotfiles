@@ -14,3 +14,8 @@ GIT_PS1_SHOWUPSTREAM=auto
 
 # プロンプトの表示設定(好きなようにカスタマイズ可)
 setopt PROMPT_SUBST ; PS1='%F{green}%n@%m%f: %F{blue}%~%f %F{red}$(__git_ps1 "(%s)")%f\$ '
+
+#nodebrew
+#export PATH=$HOME/.nodebrew/current/bin:$PATHexport PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
