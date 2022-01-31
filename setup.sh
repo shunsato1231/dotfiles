@@ -28,6 +28,6 @@ ln -is ~/dotfiles/.zshrc .
 ln -is ~/dotfiles/.zprofile .
 
 # vscode
-sh ~/dotfiles/vscsode/setup.sh
+sh ~/dotfiles/vscode/setup.sh
 
 echo "-----Finish!!------"
